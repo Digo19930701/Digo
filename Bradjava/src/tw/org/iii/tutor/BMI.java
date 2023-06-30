@@ -15,6 +15,9 @@ public class BMI extends JFrame{
 		setVisible(true);//是否顯示視窗
 		setDefaultCloseOperation(EXIT_ON_CLOSE);//結束後程式關閉
 		
+		
+	
+		
 	}
 
 	public static void main(String[] args) {

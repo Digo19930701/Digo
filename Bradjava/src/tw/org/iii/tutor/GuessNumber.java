@@ -24,7 +24,7 @@ public class GuessNumber extends JFrame {
 	public GuessNumber() {
 		super("猜數字");
 		
-		guess = new JButton("猜"); 
+		guess = new JButton("猜");
 		input = new JTextField();
 		log = new JTextArea();
 		

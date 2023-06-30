@@ -87,7 +87,7 @@ public class MyDrawer extends JPanel {
 	public void undo() {
 		
 		garbag.add(lines.removeLast());
-		repaint();
+		repaint();//重新筆記
 		
 	}
 	public void redo() {
