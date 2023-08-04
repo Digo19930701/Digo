@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 
 public class BMI extends JFrame{
 	public BMI() {
-		setTitle("來啊面對阿");//標題
+		setTitle("BMI計算");//標題
 		setBackground(Color.blue);//背景顏色
 		setSize(600, 600);//視窗大小
 		setVisible(true);//是否顯示視窗

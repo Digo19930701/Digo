@@ -8,18 +8,25 @@ import java.net.SocketException;
 public class Brad64 {
 
 	public static void main(String[] args) {
-			byte[] data = new byte[1024];
+	while (true)	{
+		byte[] buf = new byte[1024];
 		try {
-			DatagramSocket soket = new DatagramSocket(88);
-			DatagramPacket packet = new DatagramPacket(data, data.length);
+			DatagramSocket soket = new DatagramSocket(8888);
+			DatagramPacket packet = new DatagramPacket(buf, buf.length);
 			soket.receive(packet);
-			soket.send(packet);
 			soket.close();
-			System.out.println(new String(packet.getData()));
+			
+			InetAddress urip = packet.getAddress();
+			int len = packet.getLength();
+			byte[] data = packet.getData();
+			
+			String msg = new String(data,0,len);
+			
+			System.out.println(urip.getCanonicalHostName()+":"+new String(packet.getData()));
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
+	}
 	}
 
 }

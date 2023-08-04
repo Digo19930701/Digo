@@ -78,6 +78,7 @@ public class GuessNumber extends JFrame {
 			
 			
 		}
+		return g;
 		
 		
 		
